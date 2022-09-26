@@ -21,8 +21,9 @@ app.get('/users', function(req, res, next) {
 });
 
 // catch undefined routes and respond with 404
+// This is a test
 app.use(function(req, res, next) {
-  res.status(404).send("Page not found")
+  res.status(404).send("Page not found - Error")
 });
 
 // catch server errors and respond with 500
